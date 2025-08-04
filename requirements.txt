@@ -1,0 +1,12 @@
+# Required dependencies for Gmail Auto Printer
+google-api-python-client==2.149.0  # Gmail API client
+google-auth-httplib2==0.2.0       # Authentication for Google APIs
+google-auth-oauthlib==1.2.1       # OAuth2 for Google APIs
+python-dotenv==1.0.1              # Environment variable management
+aiohttp==3.10.5                   # Asynchronous HTTP requests for auto-updater
+packaging==24.1                   # Version comparison for auto-updater
+tenacity==9.0.0                   # Retry logic for auto-updater
+comtypes==1.4.7; python_version<"3.13"  # COM automation for Word (Windows, Python < 3.13)
+pywin32==306; sys_platform=="win32"    # Windows-specific COM and printer handling
+psutil==6.0.0                     # System resource monitoring
+requests==2.32.3                  # HTTP requests for error notifications
